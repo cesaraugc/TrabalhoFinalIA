@@ -1,0 +1,7 @@
+function mascaras
+
+dirname = 'D:\usuarios\carolina\carolina\Doutorado\Programas\Base_mama\JPG\segmentation5c';
+files = dir(strcat(dirname, '\*bmp'));     % pega o nome das imagens
+for i=1:250
+    Binarizar(imread(fullfile(dirname,files(i).name)));
+    
